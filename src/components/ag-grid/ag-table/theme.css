@@ -1,18 +1,21 @@
 /**
- * Add CSS Custom Prop
+ * Add Origin CSS Custom Prop
  * Doc: https://developer.mozilla.org/ja/docs/Web/CSS/Using_CSS_custom_properties */
 :root {
+  --spacing-px: 1px;
+  --spacing-quarter: 2px;
+  --spacing-half: 4px;
   --spacing-base: 8px;
   --spacing-base-2: 16px;
   --spacing-base-3: 24px;
   --spacing-base-4: 32px;
   --spacing-base-5: 40px;
   --spacing-base-6: 48px;
-
+  /* Colors */
   --black-alpha-1: rgba(000, 000, 000, 0.1);
   --black-alpha-2: rgba(000, 000, 000, 0.2);
   --black-alpha-3: rgba(000, 000, 000, 0.3);
-  /* TODO: Create pattern */
+  /* ... TODO: Create pattern */
   --black-alpha-9: rgba(000, 000, 000, 0.9);
 }
 
@@ -21,16 +24,25 @@
   --ag-grid-size: var(--spacing-base);
   --ag-border-color: var(--black-alpha-1);
 
+  /* https://www.ag-grid.com/react-data-grid/global-style-customisation-headers/ */
   --ag-header-height: var(--spacing-base-6);
-  --ag-header-foreground-color: var(--black-alpha-9);
   --ag-header-background-color: var(--black-alpha-1);
+  --ag-header-foreground-color: var(--black-alpha-9);
 
   --ag-header-cell-hover-background-color: var(--black-alpha-2);
   --ag-header-cell-moving-background-color: var(--black-alpha-2);
 }
 
-/* if create origin theme */
+.ag-root-wrapper.ag-layout-normal {
+  border-radius: var(--spacing-half);
+  box-shadow: 0 2px 4px var(--black-alpha-1);
+}
+
+/* Create origin theme */
+.ag-theme-customtheme {
+  --ag-border-color: var(--black-alpha-1);
+  border-radius: var(--spacing-half);
+}
 .ag-theme-customtheme .ag-header {
-  /* or with CSS selectors targeting grid DOM elements */
-  font-style: sans-serif;
+  border-radius: var(--spacing-half) var(--spacing-half) 0 0;
 }

@@ -68,7 +68,10 @@ export const AgTableBasic = () => {
   };
 
   return (
-    <div className="ag-theme-material" style={{ height: 400, width: 'auto' }}>
+    <div
+      className="ag-theme-material ag-theme-customtheme"
+      style={{ height: 400, width: 'auto' }}
+    >
       <AgGridReact
         rowData={rowData}
         columnDefs={columnDefs}
