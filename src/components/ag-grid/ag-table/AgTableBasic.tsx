@@ -39,12 +39,6 @@ export const AgTableBasic = () => {
     { make: 'Toyota', model: 'Celica', price: 35000 },
     { make: 'Ford', model: 'Mondeo', price: 32000 },
     { make: 'Porsche', model: 'Boxter', price: 72000 },
-    { make: 'Toyota', model: 'Celica', price: 35000 },
-    { make: 'Ford', model: 'Mondeo', price: 32000 },
-    { make: 'Porsche', model: 'Boxter', price: 72000 },
-    { make: 'Toyota', model: 'Celica', price: 35000 },
-    { make: 'Ford', model: 'Mondeo', price: 32000 },
-    { make: 'Porsche', model: 'Boxter', price: 72000 },
   ]);
 
   const [columnDefs] = useState([
@@ -52,9 +46,6 @@ export const AgTableBasic = () => {
       headerName: 'GroupName', // 列のグルーピング
       field: 'make',
     },
-    { field: 'make' },
-    { field: 'model' },
-    { field: 'price' },
     { field: 'make' },
     { field: 'model' },
     { field: 'price' },
@@ -76,7 +67,7 @@ export const AgTableBasic = () => {
   };
 
   return (
-    <div className="ag-theme-alpine" style={{ height: 400, width: 'auto' }}>
+    <div className="ag-theme-material" style={{ height: 400, width: 'auto' }}>
       <AgGridReact
         rowData={rowData}
         columnDefs={columnDefs}
