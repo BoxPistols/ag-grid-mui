@@ -1,0 +1,16 @@
+/* DOC: https://developer.mozilla.org/ja/docs/Web/CSS/Using_CSS_custom_properties */
+:root {
+  --gray-alpha-1: rgba(000, 000, 000, 0.1);
+}
+
+/* DOC: https://www.ag-grid.com/react-data-grid/themes/ */
+.ag-theme-material {
+  --ag-grid-size: 8px;
+  --ag-border-color: var(--gray-alpha-1);
+}
+
+/* if create origin theme */
+.ag-theme-customtheme .ag-header {
+  /* or with CSS selectors targeting grid DOM elements */
+  font-style: sans-serif;
+}

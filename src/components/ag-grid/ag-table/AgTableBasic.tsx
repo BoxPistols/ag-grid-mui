@@ -5,6 +5,7 @@ import { AgGridReact } from 'ag-grid-react';
 
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
+import './theme.css';
 
 export const AgTableBasic = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
