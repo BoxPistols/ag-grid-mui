@@ -53,6 +53,7 @@ export const AgTableBasic = () => {
     { field: 'make' },
     { field: 'model' },
     { field: 'price' },
+    { field: 'make' },
   ]);
 
   // 定義

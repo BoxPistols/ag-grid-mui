@@ -12,6 +12,7 @@
   --spacing-base-5: 40px;
   --spacing-base-6: 48px;
   /* Colors */
+  --black-alpha-half: rgba(000, 000, 000, 0.05);
   --black-alpha-1: rgba(000, 000, 000, 0.1);
   --black-alpha-2: rgba(000, 000, 000, 0.2);
   --black-alpha-3: rgba(000, 000, 000, 0.3);
@@ -26,7 +27,7 @@
 
   /* https://www.ag-grid.com/react-data-grid/global-style-customisation-headers/ */
   --ag-header-height: var(--spacing-base-6);
-  --ag-header-background-color: var(--black-alpha-1);
+  --ag-header-background-color: var(--black-alpha-half);
   --ag-header-foreground-color: var(--black-alpha-9);
 
   --ag-header-cell-hover-background-color: var(--black-alpha-2);
@@ -45,4 +46,5 @@
 }
 .ag-theme-customtheme .ag-header {
   border-radius: var(--spacing-half) var(--spacing-half) 0 0;
+  font-weight: 700;
 }
