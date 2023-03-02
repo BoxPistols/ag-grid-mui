@@ -15,6 +15,13 @@ const SubTitle = styled('Typography')(({ theme }) => ({
 export default function BasicMenu() {
   return (
     <div>
+      <Typography
+        variant="h5"
+        gutterBottom
+        sx={{ color: 'dimgray', fontWeight: 200 }}
+      >
+        AgGrid with MUI
+      </Typography>
       {/* ag-grid */}
       <Typography color="tomato" variant="h5">
         AG-Grid Table
